@@ -5,4 +5,9 @@
     <string name="alert_dialog">Alert Dialog</string>
     <string name="custom_dialog">Custom Dialog</string>
     <string name="custom_progress_dialog">Custom Progress Dialog</string>
+    <string name="custom_dialog_title">Custom Dialog Title</string>
+    <string name="there_will_be_description_or_detail">There will be description or detail......</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="please_wait">Please wait...</string>
 </resources>

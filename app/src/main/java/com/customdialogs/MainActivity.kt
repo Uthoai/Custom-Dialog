@@ -1,5 +1,6 @@
 package com.customdialogs
 
+import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -22,6 +23,32 @@ class MainActivity : AppCompatActivity() {
         binding.btnAlertDialog.setOnClickListener {
             alertDialogFunction()
         }
+        //Custom Dialog
+        binding.btnCustomDialog.setOnClickListener {
+            customDialogFunction()
+        }
+        //Custom Progress Dialog
+        binding.btnCustomProgressDialog.setOnClickListener {
+            customProgressDialogFunction()
+        }
+
+    }
+
+    private fun customProgressDialogFunction() {
+        val customProgressDialog = Dialog(this)
+        //set the screen content from a layout resource.
+        //the resource will be inflated, adding all top-level views to the screen.
+        customProgressDialog.setContentView(R.layout.custom_progress_dialog)
+        customProgressDialog.show()
+    }
+
+    private fun customDialogFunction() {
+        val customDialog = Dialog(this)
+        //set the screen content from a layout resource.
+        //the resource will be inflated, adding all top-level views to the screen.
+        customDialog.setContentView(R.layout.custom_dialog)
+
+        customDialog.show()
     }
 
     private fun alertDialogFunction() {
